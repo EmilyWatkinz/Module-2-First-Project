@@ -779,19 +779,28 @@ PRICING ↓
     box-shadow: rgb(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.6) 0px 1px 2px 0px;
 }
 
-.plan_-stripe {
+.plan__stripe {
     position: absolute;
-    left: 0 px;
-    right: 0px;
+    left: 10px;
+    right: 10px;
     top: 0px;
-    height: 0.5rem;
-    border-top-left-radius: 0.5rem;
-    border-top-right-radius: 0.5rem;
+    height: 2px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 10px;
 }
 
-.plan:nth-child(1) .plan__stripe {
+.plan:nth-child(1) .plan__stripe, 
+ .plan:nth-child(1) .plan__button {
     color: #f7fafc;
     background: linear-gradient(115deg, rgb(56, 178, 172) 0%, rgb(129, 230, 217) 100%);
+}
+
+.plan:nth-child(1) .plan__button:active {
+    background: rgb(27, 108, 104);
+}
+
+.plan:nth-child(2) {
+    background: linear-gradient(135deg,rgb(76, 81, 191) 0%, rgb(102, 126, 234) 100%);
 }
 .plan__top {
     display: flex;
@@ -808,6 +817,23 @@ PRICING ↓
     color: #1a202c;
 }
 
+.plan:nth-child(2) .plan__price,
+.plan:nth-child(2) .plan__name,
+.plan:nth-child(2) .plan__target,
+.plan:nth-child(2) .plan__feature {
+    color: white;
+}
+
+
+.plan:nth-child(3) .plan__stripe,
+.plan:nth-child(3) .plan__button {
+    color: #f7fafc;
+    background: linear-gradient(115deg, rgb(245, 101, 101) 0%, rgb(254, 178, 178) 100%);
+}
+
+.plan:nth-child(3) .plan__button:active {
+    background: rgb(201, 60, 60);
+}
 .plan__name {
     font-size: 20px;
 }
